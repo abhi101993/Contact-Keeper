@@ -32,7 +32,7 @@ body('password','Please enter password with atleast 6 characters').isLength({min
 
   if(user)
   {
-      return res.status(400).json({message:'User already exist with above email'});
+      return res.status(400).json({msg:'User already exist with above email'});
   }
 
   user = new User ({

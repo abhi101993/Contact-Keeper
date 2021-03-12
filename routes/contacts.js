@@ -141,7 +141,7 @@ async (req,res) =>
 
     if(!contact)
     {
-       return res.status(404).json({message:'contact not found'});
+       return res.status(404).json({msg:'contact not found'});
     }
 
     if(contact.user.toString() != req.user.id)
